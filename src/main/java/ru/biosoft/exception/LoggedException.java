@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Logger;
 
 /**
- * 
+ * Extension of exception for more convenient logging.
  */
 @SuppressWarnings("serial")
 public abstract class LoggedException extends RuntimeException
