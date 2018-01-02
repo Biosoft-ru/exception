@@ -5,10 +5,10 @@ import ru.biosoft.exception.LoggedException.LoggingLevel;
 /**
  * Exception descriptor has following properties:
  * <ul> 
- *   <li>code - some formalized code. It can be used by user to describe the problem to vendor or find a solution in the product documentation.
- *   <li>logLevel - how the exception should be logged.
- *   <li>template - message template to log the exception. All substrings like <code>$some_key$</> will be replaced by corresponding values
- *   from LoggedException.properties.   
+ *   <li>code - some formalized code. It can be used by user to describe the problem to vendor or find a solution in the product documentation.</li>
+ *   <li>logLevel - how the exception should be logged.</li>
+ *   <li>template - message template to log the exception. All substrings like <code>$some_key$</code> will be replaced by corresponding values
+ *   from LoggedException.properties.</li>   
  * </ul>      
  *  
  */
