@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 @SuppressWarnings("serial")
 public abstract class LoggedException extends RuntimeException
 {
-	private final static Logger defaultLogger = Logger.getLogger("error.log");
+	protected final static Logger defaultLogger = Logger.getLogger("error.log");
     private static AtomicInteger lastExceptionId = new AtomicInteger();
 
 	public enum LoggingLevel

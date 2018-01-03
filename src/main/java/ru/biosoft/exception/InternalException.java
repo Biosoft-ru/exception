@@ -1,10 +1,12 @@
 package ru.biosoft.exception;
 
-import java.beans.PropertyDescriptor;
-
+/**
+ * This exception is used to convert (wrap) other exceptions to {@link LoggedException}.
+ */
+@SuppressWarnings("serial")
 public class InternalException extends LoggedException
 {
-    private static final String KEY_MESSAGE = "message";
+    public static final String KEY_MESSAGE = "message";
 
     public static final ExceptionDescriptor ED_INTERNAL = new ExceptionDescriptor( "Internal", LoggingLevel.TraceIfNoCause,
             "Unexpected internal error occured: $message$.");
