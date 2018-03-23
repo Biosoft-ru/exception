@@ -19,6 +19,12 @@ public class ExceptionRegistry
         if(t instanceof InvocationTargetException || t instanceof ExecutionException)
             t = t.getCause();
 
+        if( t instanceof LoggedException )
+            return (LoggedException)t;
+
+        if( t instanceof ClassNotFoundException || t instanceof NoClassDefFoundError )
+            return new LoggedClassNotFoundException (t);
+
         return new InternalException(t);
     }
     
