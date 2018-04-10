@@ -2,6 +2,7 @@
  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
  <modelVersion>4.0.0</modelVersion>
 
+ <groupId>ru.biosoft</groupId>
  <artifactId>exception</artifactId>
  <version>1.0.0</version>
  <packaging>jar</packaging>
@@ -9,7 +10,20 @@
  <name>Logged exception</name>
  <description>Extension of exception for more convenient logging.</description>
 
- <groupId>ru.biosoft</groupId>
+ <distributionManagement>
+  <repository>
+   <uniqueVersion>false</uniqueVersion>
+   <id>dote</id>
+   <name>DOTE Repository</name>
+   <url>http://nexus.dote.ru/nexus/content/repositories/releases/</url>
+  </repository>
+  <snapshotRepository>
+   <uniqueVersion>true</uniqueVersion>
+   <id>dote-snapshots</id>
+   <name>DOTE Snapshots</name>
+   <url>http://nexus.dote.ru/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+ </distributionManagement>
 
  <properties>
   <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
